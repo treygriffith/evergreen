@@ -13,12 +13,12 @@ const invisibleInputClass = css({
   WebkitFontSmoothing: 'antialiased',
 
   '&:focus': {
-    outline: 'none'
+    outline: 'none',
   },
 
   '&::placeholder': {
-    color: `rgba(67, 90, 111, 0.7)`
-  }
+    color: `rgba(67, 90, 111, 0.7)`,
+  },
 }).toString()
 
 export default class SearchTableHeaderCell extends PureComponent {
@@ -56,14 +56,14 @@ export default class SearchTableHeaderCell extends PureComponent {
     /**
      * Icon to display in the input.
      */
-    icon: PropTypes.string
+    icon: PropTypes.string,
   }
 
   static defaultProps = {
     onChange: () => {},
     spellCheck: true,
     placeholder: 'Filter...',
-    icon: 'search'
+    icon: 'search',
   }
 
   render() {
@@ -93,7 +93,7 @@ export default class SearchTableHeaderCell extends PureComponent {
           flex="1"
           className={invisibleInputClass}
           value={value}
-          onChange={e => onChange(e.target.value)}
+          onChange={(e) => onChange(e.target.value)}
           autoFocus={autoFocus}
           spellCheck={spellCheck}
           fontWeight={500}

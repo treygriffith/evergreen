@@ -40,7 +40,7 @@ class MenuOption extends React.PureComponent {
     /**
      * Theme provided by ThemeProvider.
      */
-    theme: PropTypes.object.isRequired
+    theme: PropTypes.object.isRequired,
   }
 
   static defaultProps = {
@@ -48,14 +48,14 @@ class MenuOption extends React.PureComponent {
     isSelected: false,
     onClick: () => {},
     onSelect: () => {},
-    onKeyPress: () => {}
+    onKeyPress: () => {},
   }
 
   handleClick = () => {
     this.props.onSelect()
   }
 
-  handleKeyPress = e => {
+  handleKeyPress = (e) => {
     if (e.key === 'Enter' || e.key === ' ') {
       this.props.onSelect()
       e.preventDefault()
@@ -69,7 +69,7 @@ class MenuOption extends React.PureComponent {
       theme,
       appearance,
       secondaryText,
-      isSelected
+      isSelected,
     } = this.props
 
     const themedClassName = theme.getMenuItemClassName(appearance, 'none')
@@ -78,7 +78,7 @@ class MenuOption extends React.PureComponent {
       ? {
           color: 'selected',
           fontWeight: 500,
-          marginLeft: 16
+          marginLeft: 16,
         }
       : { marginLeft: 44 }
 

@@ -21,9 +21,9 @@ const items = starWarsNames.all.sort((a, b) => {
   return 0
 })
 
-const customItems = items.map(i => ({ label: i }))
+const customItems = items.map((i) => ({ label: i }))
 
-const handleChange = selectedItem => {
+const handleChange = (selectedItem) => {
   console.log(selectedItem)
 }
 
@@ -62,7 +62,7 @@ storiesOf('combobox', module).add('Combobox', () => (
       <Combobox
         initialSelectedItem={customItems[0]}
         items={customItems}
-        itemToString={i => (i ? i.label : '')}
+        itemToString={(i) => (i ? i.label : '')}
         onChange={handleChange}
       />
     </Box>
@@ -83,7 +83,7 @@ storiesOf('combobox', module).add('Combobox', () => (
           width="100%"
           initialSelectedItem={customItems[0]}
           items={customItems}
-          itemToString={i => (i ? i.label : '')}
+          itemToString={(i) => (i ? i.label : '')}
           onChange={handleChange}
         />
       </Pane>
@@ -94,7 +94,7 @@ storiesOf('combobox', module).add('Combobox', () => (
           width="100%"
           initialSelectedItem={customItems[0]}
           items={customItems}
-          itemToString={i => (i ? i.label : '')}
+          itemToString={(i) => (i ? i.label : '')}
           onChange={handleChange}
         />
       </Pane>
@@ -112,7 +112,7 @@ storiesOf('combobox', module).add('Combobox', () => (
           width="100%"
           initialSelectedItem={customItems[0]}
           items={customItems}
-          itemToString={i => (i ? i.label : '')}
+          itemToString={(i) => (i ? i.label : '')}
           onChange={handleChange}
         />
       </Pane>

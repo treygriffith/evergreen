@@ -31,7 +31,7 @@
     "./esm/backwards-compat-classname.js"
   ],
   "scripts": {
-    "test": "xo && jest --bail && ava",
+    "test": "eslint ./src && jest --bail && ava",
     "prepublishOnly": "rm -rf esm commonjs umd && yarn build",
     "dev": "start-storybook -p 6006",
     "create-package": "./tools/create-package.js",
@@ -100,9 +100,13 @@
     "concurrently": "^4.0.1",
     "enzyme": "^3.7.0",
     "enzyme-adapter-react-16": "^1.6.0",
-    "eslint-config-prettier": "^3.1.0",
-    "eslint-config-xo-react": "^0.17.0",
-    "eslint-plugin-react": "^7.11.1",
+    "eslint": "^7.0.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-react": "^7.19.0",
+    "eslint-plugin-react-hooks": "^4.0.0",
+    "eslint-plugin-standard": "^4.0.1",
     "faker": "^4.1.0",
     "file-loader": "^2.0.0",
     "fs-extra": "^7.0.0",
@@ -112,7 +116,7 @@
     "jscodeshift": "^0.7.0",
     "lint-staged": "^10.0.1",
     "np": "^5.2.1",
-    "prettier": "^1.14.3",
+    "prettier": "^2.0.5",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
     "react-test-renderer": "^16.5.2",
@@ -121,73 +125,7 @@
     "rollup-plugin-terser": "^5.2.0",
     "sinon": "^8.1.0",
     "starwars-names": "^1.6.0",
-    "url-loader": "^1.1.2",
-    "xo": "^0.25.3"
-  },
-  "xo": {
-    "parser": "babel-eslint",
-    "extends": [
-      "xo-react",
-      "prettier",
-      "prettier/react"
-    ],
-    "envs": [
-      "browser"
-    ],
-    "ignores": [
-      "codemods/"
-    ],
-    "space": true,
-    "semicolon": false,
-    "rules": {
-      "indent": [
-        "off"
-      ],
-      "react/jsx-indent-props": [
-        "off"
-      ],
-      "react/jsx-indent": [
-        "off"
-      ],
-      "react/require-default-props": [
-        "off"
-      ],
-      "react/default-props-match-prop-types": [
-        "off"
-      ],
-      "react/forbid-component-props": [
-        "off"
-      ],
-      "react/jsx-no-bind": [
-        "off"
-      ],
-      "react/jsx-sort-props": [
-        "off"
-      ],
-      "unicorn/filename-case": [
-        "off"
-      ],
-      "unicorn/prefer-node-append": [
-        "off"
-      ],
-      "unicorn/prefer-string-slice": [
-        "warn"
-      ],
-      "unicorn/prefer-node-remove": [
-        "off"
-      ],
-      "unicorn/prefer-dataset": [
-        "off"
-      ],
-      "unicorn/catch-error-name": [
-        "off"
-      ]
-    },
-    "settings": {
-      "react": {
-        "version": "^16.8.0"
-      }
-    }
+    "url-loader": "^1.1.2"
   },
   "prettier": {
     "semi": false,
@@ -195,7 +133,7 @@
   },
   "lint-staged": {
     "!(codemods)/**/*.js": [
-      "xo --fix",
+      "eslint ./src/**/*.js --fix",
       "prettier --write"
     ],
     "*.{json,md}": [

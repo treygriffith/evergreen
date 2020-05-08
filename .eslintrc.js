@@ -1,0 +1,38 @@
+module.exports = {
+  parser: 'babel-eslint',
+  extends: ['prettier', 'prettier/react', 'prettier/standard'],
+  rules: {
+    'import/no-duplicates': 'off',
+    'import/no-unassigned-import': 'error',
+    'react-hooks/exhaustive-deps': 'off',
+    'react-hooks/rules-of-hooks': 'error',
+    'react/jsx-boolean-value': 'off',
+    'react/jsx-curly-brace-presence': 'off',
+    'react/jsx-fragments': 'off',
+    'react/jsx-handler-names': 'off',
+    'react/jsx-key': 'error',
+    'react/jsx-pascal-case': 'off',
+    'dot-notation': 'off',
+    'lines-between-class-members': 'off',
+    'prefer-const': 'off',
+    'no-case-declarations': 'off',
+    'no-console': [
+      'error',
+      {
+        allow: ['error', 'warn'],
+      },
+    ],
+    'no-debugger': 'error',
+    'no-prototype-builtins': 'off',
+    'no-redeclare': 'off',
+    'no-useless-constructor': 'off',
+    'no-useless-escape': 'off',
+    'no-useless-return': 'off',
+    'no-empty': 'off',
+  },
+  plugins: ['react', 'react-hooks', 'import'],
+  env: {
+    browser: true,
+    node: true,
+  },
+}

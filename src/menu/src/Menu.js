@@ -22,12 +22,11 @@ export default class Menu extends React.PureComponent {
     /**
      * The children of the component.
      */
-    children: PropTypes.node
+    children: PropTypes.node,
   }
 
   componentDidMount() {
     // Get the menu item buttons
-    // eslint-disable-next-line unicorn/prefer-spread
     this.menuItems = Array.from(
       this.menuRef.querySelectorAll('[role="menuitemradio"], [role="menuitem"]')
     )
@@ -44,7 +43,7 @@ export default class Menu extends React.PureComponent {
       const goingDown = startItem === this.firstItem
 
       // Helper function for getting next legitimate element
-      const move = elem => {
+      const move = (elem) => {
         const indexOfItem = this.menuItems.indexOf(elem)
 
         if (goingDown) {
@@ -74,9 +73,9 @@ export default class Menu extends React.PureComponent {
       nextItem.focus()
     }
 
-    this.menuItems.forEach(menuItem => {
+    this.menuItems.forEach((menuItem) => {
       // Handle key presses for menuItem
-      menuItem.addEventListener('keydown', e => {
+      menuItem.addEventListener('keydown', (e) => {
         // Go to next/previous item if it exists
         // or loop around
 
@@ -103,7 +102,7 @@ export default class Menu extends React.PureComponent {
     })
   }
 
-  onMenuRef = ref => {
+  onMenuRef = (ref) => {
     this.menuRef = ref
   }
 
