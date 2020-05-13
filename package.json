@@ -42,6 +42,7 @@
     "size": "size-limit",
     "clean": "git clean -Xdf",
     "release": "np",
+    "lint": "xo",
     "deploy-docs": "cd docs && yarn install && yarn deploy",
     "postpublish": "yarn git-branch-is master && yarn deploy-docs"
   },
