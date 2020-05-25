@@ -64,7 +64,9 @@ export default class EditableCellField extends React.PureComponent {
     this.update()
 
     requestAnimationFrame(() => {
-      this.textareaRef.focus()
+      if (this.textareaRef) {
+        this.textareaRef.focus()
+      }
     })
   }
 
@@ -77,7 +79,6 @@ export default class EditableCellField extends React.PureComponent {
     if (this.tableBodyRef) return this.tableBodyRef
 
     let ref = targetRef
-    console.log(ref)
     while (ref) {
       const isTableBody = ref.hasAttribute('data-evergreen-table-body')
       if (isTableBody) {

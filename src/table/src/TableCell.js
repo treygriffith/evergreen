@@ -147,7 +147,6 @@ class TableCell extends PureComponent {
 
   render() {
     const {
-      innerRef,
       theme,
       children,
       appearance,

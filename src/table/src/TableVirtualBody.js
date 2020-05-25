@@ -166,7 +166,6 @@ export default class TableVirtualBody extends PureComponent {
 
   onRef = ref => {
     this.paneRef = ref
-    console.log(ref)
   }
 
   onVirtualHelperRef = (index, ref) => {

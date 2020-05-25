@@ -13,7 +13,7 @@ const TextTableCell = memo(
   forwardRef(
     ({ children, textProps, isNumber, placeholder, ...props }, ref) => {
       return (
-        <TableCell {...props} ref={ref}>
+        <TableCell {...props} innerRef={ref}>
           <Text
             size={300}
             flex="1"

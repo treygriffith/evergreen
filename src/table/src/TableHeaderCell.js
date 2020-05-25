@@ -4,7 +4,12 @@ import TableCell from './TableCell'
 const TableHeaderCell = memo(
   forwardRef((props, ref) => {
     return (
-      <TableCell overflow="visible" borderBottom={null} {...props} ref={ref} />
+      <TableCell
+        overflow="visible"
+        borderBottom={null}
+        {...props}
+        innerRef={ref}
+      />
     )
   })
 )
