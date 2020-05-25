@@ -150,7 +150,7 @@ class EditableCell extends React.PureComponent {
     return (
       <React.Fragment>
         <TextTableCell
-          innerRef={this.onMainRef}
+          ref={this.onMainRef}
           isSelectable={isSelectable}
           onClick={this.handleClick}
           onDoubleClick={this.handleDoubleClick}

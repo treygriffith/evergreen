@@ -1,5 +1,5 @@
+import React, { memo, forwardRef } from 'react'
 import { css } from 'glamor'
-import React, { PureComponent } from 'react'
 import PropTypes from 'prop-types'
 import { Text } from '../../typography'
 import { IconWrapper } from '../../icons/src/IconWrapper'
@@ -21,87 +21,92 @@ const invisibleInputClass = css({
   }
 }).toString()
 
-export default class SearchTableHeaderCell extends PureComponent {
-  static propTypes = {
-    /**
-     * Composes the TableHeaderCell component as the base.
-     */
-    ...TableHeaderCell.propTypes,
+const SearchTableHeaderCell = memo(
+  forwardRef(
+    (
+      {
+        value,
+        children,
+        onChange,
+        autoFocus,
+        spellCheck,
+        placeholder,
+        icon,
+        ...props
+      },
+      ref
+    ) => {
+      return (
+        <TableHeaderCell {...props} ref={ref}>
+          <IconWrapper
+            icon={icon}
+            color="muted"
+            marginLeft={2}
+            marginRight={10}
+            size={12}
+          />
+          <Text
+            is="input"
+            size={300}
+            flex="1"
+            className={invisibleInputClass}
+            value={value}
+            onChange={e => onChange(e.target.value)}
+            autoFocus={autoFocus}
+            spellCheck={spellCheck}
+            fontWeight={500}
+            marginLeft={-2}
+            paddingLeft={0}
+            placeholder={placeholder}
+          />
+        </TableHeaderCell>
+      )
+    }
+  )
+)
 
-    /**
-     * The value of the input.
-     */
-    value: PropTypes.string,
+SearchTableHeaderCell.propTypes = {
+  /**
+   * Composes the TableHeaderCell component as the base.
+   */
+  ...TableHeaderCell.propTypes,
 
-    /**
-     * Handler to be called when the input changes.
-     */
-    onChange: PropTypes.func,
+  /**
+   * The value of the input.
+   */
+  value: PropTypes.string,
 
-    /**
-     * Sets whether the component should be automatically focused on component render.
-     */
-    autoFocus: PropTypes.bool,
+  /**
+   * Handler to be called when the input changes.
+   */
+  onChange: PropTypes.func,
 
-    /**
-     * Sets whether to apply spell checking to the content.
-     */
-    spellCheck: PropTypes.bool,
+  /**
+   * Sets whether the component should be automatically focused on component render.
+   */
+  autoFocus: PropTypes.bool,
 
-    /**
-     * Text to display in the input if the input is empty.
-     */
-    placeholder: PropTypes.string,
+  /**
+   * Sets whether to apply spell checking to the content.
+   */
+  spellCheck: PropTypes.bool,
 
-    /**
-     * The Evergreen or custom icon before the label.
-     */
-    icon: PropTypes.node
-  }
+  /**
+   * Text to display in the input if the input is empty.
+   */
+  placeholder: PropTypes.string,
 
-  static defaultProps = {
-    onChange: () => {},
-    spellCheck: true,
-    placeholder: 'Filter...',
-    icon: 'search'
-  }
-
-  render() {
-    const {
-      value,
-      children,
-      onChange,
-      autoFocus,
-      spellCheck,
-      placeholder,
-      icon,
-      ...props
-    } = this.props
-
-    return (
-      <TableHeaderCell {...props}>
-        <IconWrapper
-          icon={icon}
-          color="muted"
-          marginLeft={2}
-          marginRight={10}
-          size={12}
-        />
-        <Text
-          is="input"
-          size={300}
-          flex="1"
-          className={invisibleInputClass}
-          value={value}
-          onChange={e => onChange(e.target.value)}
-          autoFocus={autoFocus}
-          spellCheck={spellCheck}
-          fontWeight={500}
-          marginLeft={-2}
-          paddingLeft={0}
-          placeholder={placeholder}
-        />
-      </TableHeaderCell>
-    )
-  }
+  /**
+   * The Evergreen or custom icon before the label.
+   */
+  icon: PropTypes.node
 }
+
+SearchTableHeaderCell.defaultProps = {
+  onChange: () => {},
+  spellCheck: true,
+  placeholder: 'Filter...',
+  icon: 'search'
+}
+
+export default SearchTableHeaderCell

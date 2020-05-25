@@ -166,6 +166,7 @@ export default class TableVirtualBody extends PureComponent {
 
   onRef = ref => {
     this.paneRef = ref
+    console.log(ref)
   }
 
   onVirtualHelperRef = (index, ref) => {
@@ -283,7 +284,7 @@ export default class TableVirtualBody extends PureComponent {
     return (
       <Pane
         data-evergreen-table-body
-        innerRef={this.onRef}
+        ref={this.onRef}
         height={paneHeight}
         flex="1"
         overflow="hidden"

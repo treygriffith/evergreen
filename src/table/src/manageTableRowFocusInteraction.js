@@ -15,7 +15,7 @@ export default function manageTableRowFocusInteraction(key, ref) {
     nextItemToFocus = tableBodyChildren[rowIndex + 1]
   }
 
-  if (nextItemToFocus && nextItemToFocus.hasAttribute('tabindex')) {
+  if (nextItemToFocus && nextItemToFocus.current.hasAttribute('tabindex')) {
     nextItemToFocus.focus()
   }
 }

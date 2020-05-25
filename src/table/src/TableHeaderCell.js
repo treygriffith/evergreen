@@ -1,15 +1,18 @@
-import React, { PureComponent } from 'react'
+import React, { memo, forwardRef } from 'react'
 import TableCell from './TableCell'
 
-export default class TableHeaderCell extends PureComponent {
-  static propTypes = {
-    /**
-     * Composes the TableCell component as the base.
-     */
-    ...TableCell.propTypes
-  }
-
-  render() {
-    return <TableCell overflow="visible" borderBottom={null} {...this.props} />
-  }
+const TableHeaderCell = memo(
+  forwardRef((props, ref) => {
+    return (
+      <TableCell overflow="visible" borderBottom={null} {...props} ref={ref} />
+    )
+  })
+)
+TableHeaderCell.propTypes = {
+  /**
+   * Composes the TableCell component as the base.
+   */
+  ...TableCell.propTypes
 }
+
+export default TableHeaderCell

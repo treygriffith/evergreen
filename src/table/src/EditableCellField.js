@@ -77,6 +77,7 @@ export default class EditableCellField extends React.PureComponent {
     if (this.tableBodyRef) return this.tableBodyRef
 
     let ref = targetRef
+    console.log(ref)
     while (ref) {
       const isTableBody = ref.hasAttribute('data-evergreen-table-body')
       if (isTableBody) {
@@ -168,7 +169,7 @@ export default class EditableCellField extends React.PureComponent {
 
     return (
       <Textarea
-        innerRef={this.onRef}
+        ref={this.onRef}
         onKeyDown={this.handleKeyDown}
         onBlur={this.handleBlur}
         onFocus={this.handleFocus}

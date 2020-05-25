@@ -169,7 +169,7 @@ class TableCell extends PureComponent {
         {height => {
           return (
             <Pane
-              innerRef={this.onRef}
+              ref={this.onRef}
               height={height}
               className={cx(themedClassName, className)}
               tabIndex={isSelectable ? tabIndex : undefined}

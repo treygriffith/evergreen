@@ -1,20 +1,24 @@
-import React, { PureComponent } from 'react'
+import React, { memo, forwardRef } from 'react'
 import { Pane } from '../../layers'
 
-export default class TableBody extends PureComponent {
-  static propTypes = {
-    /**
-     * Composes the Pane component as the base.
-     */
-    ...Pane.propTypes
-  }
-
-  render() {
-    const { children, ...props } = this.props
+const TableBody = memo(
+  forwardRef(({ children, ...props }, ref) => {
     return (
-      <Pane data-evergreen-table-body flex="1" overflowY="auto" {...props}>
+      <Pane
+        data-evergreen-table-body
+        flex="1"
+        overflowY="auto"
+        {...props}
+        ref={ref}
+      >
         {children}
       </Pane>
     )
-  }
+  })
+)
+
+TableBody.propTypes = {
+  ...Pane.propTypes
 }
+
+export default TableBody
