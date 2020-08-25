@@ -69,7 +69,7 @@
     "react-tiny-virtual-list": "^2.1.4",
     "react-transition-group": "^4.4.1",
     "tinycolor2": "^1.4.1",
-    "ui-box": "treygriffith/ui-box#plugins-build"
+    "ui-box": "treygriffith/ui-box#dde233f39cf788dd92cc9b6627fa8f95238a62b8"
   },
   "peerDependencies": {
     "react": "^16.8.0",
