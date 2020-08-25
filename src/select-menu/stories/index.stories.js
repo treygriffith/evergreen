@@ -1,7 +1,7 @@
 import { storiesOf } from '@storybook/react'
 import Component from '@reactions/component'
 import React from 'react'
-import Box from 'ui-box'
+import Box from '@treygriffith/ui-box'
 import { Button } from '../../buttons'
 import { Text } from '../../typography'
 import { Pane } from '../../layers'

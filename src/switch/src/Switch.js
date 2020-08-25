@@ -1,7 +1,7 @@
 import React, { memo, forwardRef } from 'react'
 import { css } from 'glamor'
 import PropTypes from 'prop-types'
-import Box, { spacing, position, layout } from 'ui-box'
+import Box, { spacing, position, layout } from '@treygriffith/ui-box'
 import { useTheme } from '../../theme'
 
 const animationEasing = {

@@ -1,6 +1,6 @@
 import React, { PureComponent } from 'react'
 import PropTypes from 'prop-types'
-import Box from 'ui-box'
+import Box from '@treygriffith/ui-box'
 import { css } from 'glamor'
 import { CrossIcon } from '../../icons'
 import { Position } from '../../constants'

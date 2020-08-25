@@ -1,6 +1,11 @@
 import React, { memo, forwardRef, useState, useEffect } from 'react'
 import PropTypes from 'prop-types'
-import Box, { spacing, position, layout, dimensions } from 'ui-box'
+import Box, {
+  spacing,
+  position,
+  layout,
+  dimensions
+} from '@treygriffith/ui-box'
 import safeInvoke from '../../lib/safe-invoke'
 import { useId } from '../../hooks'
 import SegmentedControlRadio from './SegmentedControlRadio'

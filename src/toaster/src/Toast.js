@@ -9,7 +9,7 @@ import React, {
 import { css } from 'glamor'
 import PropTypes from 'prop-types'
 import { Transition } from 'react-transition-group'
-import Box from 'ui-box'
+import Box from '@treygriffith/ui-box'
 import Alert from '../../alert/src/Alert'
 
 const animationEasing = {

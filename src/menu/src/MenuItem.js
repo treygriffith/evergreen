@@ -1,6 +1,6 @@
 import React, { memo, forwardRef, useCallback } from 'react'
 import PropTypes from 'prop-types'
-import Box from 'ui-box'
+import Box from '@treygriffith/ui-box'
 import { IconWrapper } from '../../icons/src/IconWrapper'
 import { Pane } from '../../layers'
 import { Text } from '../../typography'

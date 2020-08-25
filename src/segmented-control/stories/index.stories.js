@@ -1,6 +1,6 @@
 import { storiesOf } from '@storybook/react'
 import React from 'react'
-import Box from 'ui-box'
+import Box from '@treygriffith/ui-box'
 import Component from '@reactions/component'
 import { SegmentedControl } from '..'
 
@@ -32,7 +32,10 @@ storiesOf('segmented-control', module).add('SegmentedControl', () => (
     </Component>
     <Component
       initialState={{
-        options: [{ label: 'On', value: true }, { label: 'Off', value: false }],
+        options: [
+          { label: 'On', value: true },
+          { label: 'Off', value: false }
+        ],
         value: true
       }}
     >
@@ -54,7 +57,10 @@ storiesOf('segmented-control', module).add('SegmentedControl', () => (
       marginTop={24}
       width={80}
       height={24}
-      options={[{ label: 'On', value: true }, { label: 'Off', value: false }]}
+      options={[
+        { label: 'On', value: true },
+        { label: 'Off', value: false }
+      ]}
       defaultValue={false}
     />
   </Box>

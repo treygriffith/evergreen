@@ -1,6 +1,11 @@
 import React, { memo, useState } from 'react'
 import PropTypes from 'prop-types'
-import Box, { dimensions, spacing, position, layout } from 'ui-box'
+import Box, {
+  dimensions,
+  spacing,
+  position,
+  layout
+} from '@treygriffith/ui-box'
 import { Autocomplete } from '../../autocomplete'
 import { TextInput } from '../../text-input'
 import { IconButton } from '../../buttons'

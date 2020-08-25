@@ -1,6 +1,6 @@
 import React, { memo, forwardRef } from 'react'
 import PropTypes from 'prop-types'
-import { spacing, dimensions, position, layout } from 'ui-box'
+import { spacing, dimensions, position, layout } from '@treygriffith/ui-box'
 import { useTheme } from '../../theme'
 import { Pane } from '../../layers'
 import { Heading, Paragraph } from '../../typography'

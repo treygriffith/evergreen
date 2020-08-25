@@ -1,6 +1,6 @@
 import React, { memo } from 'react'
 import PropTypes from 'prop-types'
-import { splitBoxProps } from 'ui-box'
+import { splitBoxProps } from '@treygriffith/ui-box'
 import { FormField } from '../../form-field'
 import { useId } from '../../hooks'
 import Textarea from './Textarea'

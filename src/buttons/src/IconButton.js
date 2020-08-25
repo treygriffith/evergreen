@@ -1,6 +1,6 @@
 import React, { memo, forwardRef } from 'react'
 import PropTypes from 'prop-types'
-import { dimensions, spacing, position, layout } from 'ui-box'
+import { dimensions, spacing, position, layout } from '@treygriffith/ui-box'
 import { useTheme } from '../../theme'
 import { IconWrapper } from '../../icons/src/IconWrapper'
 import Button from './Button'

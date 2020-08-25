@@ -1,6 +1,6 @@
 import { storiesOf } from '@storybook/react'
 import React, { useEffect, useRef } from 'react'
-import Box from 'ui-box'
+import Box from '@treygriffith/ui-box'
 import { Checkbox } from '..'
 
 const refCallback = el => {

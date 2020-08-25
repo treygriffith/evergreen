@@ -1,6 +1,11 @@
 import React, { memo, forwardRef } from 'react'
 import PropTypes from 'prop-types'
-import Box, { dimensions, spacing, position, layout } from 'ui-box'
+import Box, {
+  dimensions,
+  spacing,
+  position,
+  layout
+} from '@treygriffith/ui-box'
 import FormFieldLabel from './FormFieldLabel'
 import FormFieldDescription from './FormFieldDescription'
 import FormFieldValidationMessage from './FormFieldValidationMessage'

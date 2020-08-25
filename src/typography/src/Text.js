@@ -2,7 +2,7 @@ import React, { forwardRef, memo } from 'react'
 import cx from 'classnames'
 import { css as glamorCss } from 'glamor'
 import PropTypes from 'prop-types'
-import Box from 'ui-box'
+import Box from '@treygriffith/ui-box'
 import { useTheme } from '../../theme'
 
 const Text = memo(

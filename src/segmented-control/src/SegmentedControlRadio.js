@@ -1,6 +1,6 @@
 import React, { memo, forwardRef } from 'react'
 import PropTypes from 'prop-types'
-import Box from 'ui-box'
+import Box from '@treygriffith/ui-box'
 import { css } from 'glamor'
 import cx from 'classnames'
 import { Text } from '../../typography'

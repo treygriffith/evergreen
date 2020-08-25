@@ -1,5 +1,5 @@
 import React from 'react'
-import { extractStyles as boxExtractStyles } from 'ui-box'
+import { extractStyles as boxExtractStyles } from '@treygriffith/ui-box'
 import { renderStatic } from 'glamor/server'
 
 export default function extractStyles(options = {}) {

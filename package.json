@@ -1,5 +1,5 @@
 {
-  "name": "evergreen-ui",
+  "name": "@treygriffith/evergreen-ui",
   "version": "5.1.0",
   "description": "🌲 React UI Kit by Segment 🌲",
   "contributors": [
@@ -32,7 +32,7 @@
   "sideEffects": false,
   "scripts": {
     "test": "xo && ava",
-    "prepare": "rm -rf esm commonjs umd && yarn build",
+    "prepublishOnly": "rm -rf esm commonjs umd && yarn build",
     "dev": "start-storybook -p 6006",
     "create-package": "./tools/create-package.js",
     "create-package:components": "./tools/create-package-components.js",
@@ -69,7 +69,7 @@
     "react-tiny-virtual-list": "^2.1.4",
     "react-transition-group": "^4.4.1",
     "tinycolor2": "^1.4.1",
-    "ui-box": "treygriffith/ui-box#dde233f39cf788dd92cc9b6627fa8f95238a62b8"
+    "@treygriffith/ui-box": "^4.2.0"
   },
   "peerDependencies": {
     "react": "^16.8.0",

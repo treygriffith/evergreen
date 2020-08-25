@@ -1,5 +1,5 @@
 import React, { forwardRef } from 'react'
-import Box from 'ui-box'
+import Box from '@treygriffith/ui-box'
 
 const TabNavigation = forwardRef(function TabNavigation(props, ref) {
   return <Box is="nav" role="navigation" {...props} ref={ref} />

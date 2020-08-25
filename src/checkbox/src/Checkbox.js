@@ -1,6 +1,11 @@
 import React, { memo, forwardRef, useEffect, useState } from 'react'
 import PropTypes from 'prop-types'
-import Box, { spacing, position, layout, dimensions } from 'ui-box'
+import Box, {
+  spacing,
+  position,
+  layout,
+  dimensions
+} from '@treygriffith/ui-box'
 import { Text } from '../../typography'
 import { useTheme } from '../../theme'
 import { useMergedRef } from '../../hooks'

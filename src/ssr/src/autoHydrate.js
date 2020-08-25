@@ -1,4 +1,4 @@
-import { hydrate as boxHydrate } from 'ui-box'
+import { hydrate as boxHydrate } from '@treygriffith/ui-box'
 import { rehydrate } from 'glamor'
 
 /**

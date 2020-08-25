@@ -1,6 +1,6 @@
 import { storiesOf } from '@storybook/react'
 import React from 'react'
-import Box from 'ui-box'
+import Box from '@treygriffith/ui-box'
 import { ThemeConsumer } from '../../theme'
 import { Badge, Pill } from '..'
 

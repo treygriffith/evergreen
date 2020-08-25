@@ -1740,6 +1740,15 @@
   dependencies:
     defer-to-connect "^2.0.0"
 
+"@treygriffith/ui-box@^4.2.0":
+  version "4.2.0"
+  resolved "https://registry.yarnpkg.com/@treygriffith/ui-box/-/ui-box-4.2.0.tgz#7c92c50779c79d93910b3996e4949c995279aa92"
+  integrity sha512-g4PXlPRNDueyuQYQLp7tsa1WhLDzmkEDHUwNvxwR7A4ulWAOrqV/2nHBvIpLw+NYOrd17xvaWOru7Okh464BEg==
+  dependencies:
+    "@emotion/hash" "^0.7.1"
+    inline-style-prefixer "^5.0.4"
+    prop-types "^15.7.2"
+
 "@types/anymatch@*":
   version "1.3.1"
   resolved "https://registry.yarnpkg.com/@types/anymatch/-/anymatch-1.3.1.tgz#336badc1beecb9dacc38bea2cf32adf627a8421a"
@@ -12686,14 +12695,6 @@ ua-parser-js@^0.7.18:
   version "0.7.21"
   resolved "https://registry.yarnpkg.com/ua-parser-js/-/ua-parser-js-0.7.21.tgz#853cf9ce93f642f67174273cc34565ae6f308777"
   integrity sha512-+O8/qh/Qj8CgC6eYBVBykMrNtp5Gebn4dlGD/kKXVkJNDwyrAwSIqwz8CDf+tsAIWVycKcku6gIXJ0qwx/ZXaQ==
-
-ui-box@treygriffith/ui-box#dde233f39cf788dd92cc9b6627fa8f95238a62b8:
-  version "4.2.0"
-  resolved "https://codeload.github.com/treygriffith/ui-box/tar.gz/dde233f39cf788dd92cc9b6627fa8f95238a62b8"
-  dependencies:
-    "@emotion/hash" "^0.7.1"
-    inline-style-prefixer "^5.0.4"
-    prop-types "^15.7.2"
 
 uid2@0.0.3:
   version "0.0.3"

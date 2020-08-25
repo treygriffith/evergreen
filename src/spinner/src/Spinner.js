@@ -1,7 +1,7 @@
 import React, { useState, useEffect, forwardRef, memo } from 'react'
 import { css } from 'glamor'
 import PropTypes from 'prop-types'
-import Box from 'ui-box'
+import Box from '@treygriffith/ui-box'
 import { useTheme } from '../../theme'
 
 const loadingKeyframes = css.keyframes('loading', {

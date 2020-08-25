@@ -1,6 +1,6 @@
 import test from 'ava'
 import React from 'react'
-import Box from 'ui-box'
+import Box from '@treygriffith/ui-box'
 import { render } from 'enzyme'
 import Button from '../../buttons/src/Button'
 import extractStyles from '../src/extractStyles'

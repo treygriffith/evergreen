@@ -1,6 +1,6 @@
 import { storiesOf } from '@storybook/react'
 import React from 'react'
-import Box from 'ui-box'
+import Box from '@treygriffith/ui-box'
 import Component from '@reactions/component'
 import starWarsNames from 'starwars-names'
 import { Strong, Paragraph } from '../../typography'

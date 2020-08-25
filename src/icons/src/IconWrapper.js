@@ -1,17 +1,14 @@
 import React, { forwardRef, memo } from 'react'
 import PropTypes from 'prop-types'
 import ReactIs from 'react-is'
-import Box from 'ui-box'
+import Box from '@treygriffith/ui-box'
 
 /**
  * This is an internal helper component for rendering custom or Evergreen icons
  * Box props are applied to the outer Box container, and Evergreen icon-specific props are added to the icon element.
  */
 export const IconWrapper = memo(
-  forwardRef(function Icon(
-    { icon, color, size, title, ...props },
-    ref
-  ) {
+  forwardRef(function Icon({ icon, color, size, title, ...props }, ref) {
     if (!icon || typeof icon === 'string') {
       return null
     }
@@ -19,7 +16,7 @@ export const IconWrapper = memo(
     const iconProps = {
       color,
       size,
-      title,
+      title
     }
 
     let iconWithProps = null
@@ -27,7 +24,11 @@ export const IconWrapper = memo(
       const Component = icon
       iconWithProps = <Component ref={ref} {...iconProps} />
     } else if (React.isValidElement(icon)) {
-      iconWithProps = React.cloneElement(icon, { ...iconProps, ...icon.props, ref })
+      iconWithProps = React.cloneElement(icon, {
+        ...iconProps,
+        ...icon.props,
+        ref
+      })
     }
 
     return (

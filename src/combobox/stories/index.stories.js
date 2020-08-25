@@ -1,6 +1,6 @@
 import { storiesOf } from '@storybook/react'
 import React, { useState } from 'react'
-import Box from 'ui-box'
+import Box from '@treygriffith/ui-box'
 import starWarsNames from 'starwars-names'
 import { Heading } from '../../typography'
 import { Pane } from '../../layers'

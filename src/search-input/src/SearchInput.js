@@ -1,5 +1,5 @@
 import React, { memo, forwardRef } from 'react'
-import Box, { splitBoxProps } from 'ui-box'
+import Box, { splitBoxProps } from '@treygriffith/ui-box'
 import { SearchIcon } from '../../icons'
 import { TextInput } from '../../text-input'
 import { useTheme } from '../../theme'

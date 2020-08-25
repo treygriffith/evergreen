@@ -1,7 +1,7 @@
 import { storiesOf } from '@storybook/react'
 import React, { PureComponent } from 'react'
 import PropTypes from 'prop-types'
-import Box from 'ui-box'
+import Box from '@treygriffith/ui-box'
 import { Button } from '../../buttons'
 import { Overlay } from '..'
 

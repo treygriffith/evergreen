@@ -1,5 +1,5 @@
 import React, { memo, forwardRef } from 'react'
-import Box from 'ui-box'
+import Box from '@treygriffith/ui-box'
 import Tab from './Tab'
 
 const styles = {

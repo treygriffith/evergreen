@@ -1,7 +1,7 @@
 import React, { useState, memo, forwardRef } from 'react'
 import { css } from 'glamor'
 import PropTypes from 'prop-types'
-import Box from 'ui-box'
+import Box from '@treygriffith/ui-box'
 import { Image } from '../../image'
 import { Text } from '../../typography'
 import { useTheme } from '../../theme'

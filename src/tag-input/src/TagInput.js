@@ -4,7 +4,7 @@
 
 import React, { memo, forwardRef, useState } from 'react'
 import PropTypes from 'prop-types'
-import Box from 'ui-box'
+import Box from '@treygriffith/ui-box'
 import cx from 'classnames'
 import { Text } from '../../typography'
 import { useTheme } from '../../theme'

@@ -1,6 +1,6 @@
 import { storiesOf } from '@storybook/react'
 import React from 'react'
-import Box from 'ui-box'
+import Box from '@treygriffith/ui-box'
 import { Button } from '../../buttons'
 import { Manager } from '../../manager'
 import positions from '../../constants/src/Position'
