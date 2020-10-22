@@ -14,7 +14,7 @@ export default class Toaster {
     if (!isBrowser) return
 
     const container = document.createElement('div')
-    container.setAttribute('data-evergreen-toaster-container', '')
+    container.setAttribute('data-xkit-toaster-container', '')
     document.body.appendChild(container)
 
     ReactDOM.render(
