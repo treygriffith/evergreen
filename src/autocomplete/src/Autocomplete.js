@@ -8,7 +8,7 @@ import React, {
 import PropTypes from 'prop-types'
 import fuzzaldrin from 'fuzzaldrin-plus'
 import Downshift from 'downshift'
-import VirtualList from 'react-tiny-virtual-list'
+import VirtualList from '@segment/react-tiny-virtual-list'
 import { Popover } from '../../popover'
 import { Position } from '../../constants'
 import { Heading } from '../../typography'

@@ -1,7 +1,7 @@
 import React, { PureComponent } from 'react'
 import PropTypes from 'prop-types'
 import fuzzaldrin from 'fuzzaldrin-plus'
-import VirtualList from 'react-tiny-virtual-list'
+import VirtualList from '@segment/react-tiny-virtual-list'
 import { Pane } from '../../layers'
 import { SearchIcon } from '../../icons'
 import TableHead from '../../table/src/TableHead'
